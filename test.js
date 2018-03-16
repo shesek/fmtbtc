@@ -1,5 +1,5 @@
 const { equal: eq } = require('assert')
-    , fmt = require('.')
+    , fmt = require('./fmtbtc.js')
 
 const testcases = {
   sat2msat: { 1: 1000, 0.001: 1  }
