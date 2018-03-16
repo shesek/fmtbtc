@@ -10,6 +10,7 @@
   },
   "files": ["dist/fmtbtc.js"],
   "author": "Nadav Ivgi",
+  "repository": "https://github.com/shesek/fmtbtc",
   "license": "MIT",
   "dependencies": {
     "move-decimal-point": "0.0.4"
