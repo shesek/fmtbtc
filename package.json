@@ -1,0 +1,29 @@
+{
+  "name": "fmtbtc",
+  "version": "0.0.1",
+  "description": "Format and convert bitcoin's display units: msat, sat, bit, milli and btc",
+  "main": "dist/fmtbtc.js",
+  "scripts": {
+    "test": "node test.js",
+    "dist": "./build.sh",
+    "prepublishOnly": "npm test && npm run dist"
+  },
+  "files": ["dist/fmtbtc.js"],
+  "author": "Nadav Ivgi",
+  "license": "MIT",
+  "dependencies": {
+    "move-decimal-point": "0.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.1.1",
+    "uglify-js": "^3.3.15"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
