@@ -1,8 +1,20 @@
 {
   "name": "fmtbtc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Format and convert bitcoin's display units: msat, sat, bit, milli and btc",
-  "keywords": [ "bitcoin", "bitcoin units", "msat", "msatoshi", "sat", "satoshi", "bit", "bits", "milli", "millis", "btc" ],
+  "keywords": [
+    "bitcoin",
+    "bitcoin units",
+    "msat",
+    "msatoshi",
+    "sat",
+    "satoshi",
+    "bit",
+    "bits",
+    "milli",
+    "millis",
+    "btc"
+  ],
   "main": "dist/fmtbtc.js",
   "scripts": {
     "test": "node test.js",
