@@ -26,15 +26,14 @@ fmtbtc(100000005000) // => 1000.0005
 fmtbtc(100000005000, true) // => 1,000.0005
 
 // with other base/target units
+import { msat2milli, milli2msat } from 'fmtbtc'
+msat2milli(100000000) // => 1
+milli2msat(1, true) // => 100,000,000
+
+// with dynamic unit names via fmt()/pfmt()
 import { fmt, pfmt } from 'fmtbtc'
 fmt(1, 'milli', 'sat') // => 100000
 pfmt(1, 'milli', 'sat') // => 100,000
-
-// using utility `{from}2{to}` functions
-import { milli2sat, sat2milli } from 'fmtbtc'
-sat2milli(100000) // => 1
-milli2sat(1, true) // => 100,000
-
 ```
 
 Using the browserify bundle (available at `dist/fmtbtc.bundle.min.js`),
